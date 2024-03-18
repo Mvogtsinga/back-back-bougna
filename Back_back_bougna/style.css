@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Roboto', sans-serif;
+}
+
+p {
+    text-align: center;
+}
+
+
+@media screen and (max-width:768px){
+    .heading{
+        padding: 0px 20px;
+    }
+    .heading h1{
+        font-size: 36px;
+    }
+    .heading p{
+        font-size: 17px;
+        margin-bottom: 0px;
+    }
+    .container{
+        padding: 0px;
+    }
+    
+}
+
+.heading{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px auto;
+}
+.heading h1 {
+    font-size: 50px;
+    color:#000;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.heading h1::after{
+    content:"";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    display: block;
+    margin: 0 auto;
+    background-color: aqua;
+}
+
+.heading p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 35px;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+
+body{
+
+   background-color: #949e6f;
+  
+}
+
+nav{
+    background-color: rgb(178, 199, 199);
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+}
+
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li{
+    height: 50px;
+}
+
+nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+
+}
+
+nav a:hover{
+    background-color: antiquewhite;
+}
+
+nav li:first-child{
+    margin-right: auto;
+}
+
+
+footer-container {
+    
+    display: flex;
+    align-items: center;
+    background-color: rgb(45, 28, 28);
+    padding: 10px;
+    justify-content: center;
+    
+  }
+  
+  .socialIcons {
+    background-color: rgb(127, 178, 255);
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    color: rgb(98, 100, 115);
+    width: 100%;
+  }
+  
+  .designer {
+    font-weight: bold;
+    background-color: rgb(115, 112, 132);
+  }
+
+  .footerBottom {
+    background-color: rgb(145, 168, 178);
+  }
+
