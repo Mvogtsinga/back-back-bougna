@@ -67,7 +67,7 @@ p {
 
 body{
 
-   background-color: #949e6f;
+   background-color: #e3f0ba;
   
 }
 
@@ -105,6 +105,20 @@ nav a:hover{
 nav li:first-child{
     margin-right: auto;
 }
+
+.fs-7{
+    font-size: 15px;
+  }
+  .bg-cp{
+    background-color: rgb(235, 241, 239);
+  }
+  .inp-width{
+    width: 240px;
+  }
+
+  .inp-height{
+    height: 52px;
+  }
 
 
 footer-container {
