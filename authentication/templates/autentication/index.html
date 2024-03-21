@@ -11,10 +11,27 @@
     <title>Authentication</title>
   </head>
   <body>
-    <h2> Connectez vous ! connectez vous!</h2>
+
+    {% for message in messages %}
+    <div class="alert alert-{{message.tags}} alert-dismissible fade show" role="alert">
+      <strong>Message:</strong>{{message}}
+      <button type="button" class="close" data-dismiss="alert" aria-label="close"></button>
+      <span aria-hidden="true">&times;</span>
+    </div>
+    {% endfor %}
+
+    <h2> Connectez vous ! vous êtes bien sur BBB!</h2>
+
+    {% if user.is_authenticated %}
+
+    <h2>Challeureuse salutation {{pnom}}</h2>
+    <h3>vous êtes à présent connectez</h3>
+    <button type="submit"> <a href="/signout">Se deconnecter</a></button>
+    {% else%}
     <button type="submit"><a href="/signup">Devenir membre</a></button>
     <button type="submit"><a href="/signin"> Se connecter </a></button>
-    <button type="submit"> <a href="/signout">Se deconnecter</a></button>
+    {% endif %}
+    
 
     <!-- Optional JavaScript; choose one of the two! -->
 
